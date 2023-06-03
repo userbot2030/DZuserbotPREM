@@ -28,16 +28,18 @@
         },
         "API_ID": {
             "description": "API_ID Lu Tau kan ?",
+            "value": "16452568",
             "required": true
         },
         "API_HASH": {
             "description": "API_HASH Tau kan ?",
+            "value": "f936697c5c9e5bffd433babef7a4e4c9",
             "required": true
         },
         "MONGO_URL": {
             "description": "Isi MONGODB, Kalo Ga tau bisa ke @amangsupport Ketik #tutor_mongodb",
             "required": true,
-            "value": ""
+            "value": "mongodb+srv://Muhammad:new37@cluster0.i5k0icq.mongodb.net/?retryWrites=true&w=majority"
         },
         "OPENAI_API": {
             "description": "Jika ingin menggunakan openai, isi openai-api-key",
@@ -47,17 +49,17 @@
         "BOT_TOKEN": {
             "description": "fill with your bot token get from @BotFather on telegram",
             "required": true,
-            "value": ""
+            "value": "5967299962:AAE1-tiOlPUNcC7_pvb5rT2F6QIfmTWhoEw"
         },
         "HEROKU_API_KEY": {
             "description": "Ambil Heroku Api Key Dipengaturan Heroku",
             "required": true,
-            "value": "Isi"
+            "value": "0e170c97-43cd-4134-9194-f4699357a39e"
         },
         "HEROKU_APP_NAME": {
             "description": "Heroku APP name",
             "required": true,
-            "value": "Isi Mas"
+            "value": "dzubot"
         }
     },
     "buildpacks": [
