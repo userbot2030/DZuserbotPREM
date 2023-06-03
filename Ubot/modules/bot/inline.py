@@ -78,7 +78,7 @@ async def alive_function(message, answers):
     ping = (datetime.now() - start).microseconds / 1000
     uptime = await get_readable_time((time.time() - StartTime))
     msg = (
-        f"<b>AmangUserbot</b>\n"
+        f"<b>DZuserbot</b>\n"
         f"<b> status: Premium {status} </b>\n"
         f"    <b> expired:</b> <code>{remaining_days}</code>\n"
         f"    <b> ping_ubot:</b> <code>{ping} ms</code>\n"
