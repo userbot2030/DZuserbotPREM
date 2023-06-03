@@ -75,17 +75,21 @@ async def start_(client: Client, message: Message):
     ADMIN2 = ADMIN2_ID[0]
     await message.reply_text(
         f"""<b>👋 Halo {message.from_user.first_name} \n
-🤖 Welcome to 
-❓ Apa saja sih fiturnya?,kalo mau lihat fitur ubotnya, pm ke admin dibawah ini.
-💡 Jika ingin membuat Userbot premium . Kamu bisa hubungin admin dibawah ini membuat bot.</b>""",
+━━━━━━━━━━━━━━━━━━━━━━━━
+𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 ᴘʀᴇᴍɪᴜᴍ💎
+├ ʀᴘ. 30.000  [ ᴘᴇʀʙᴜʟᴀɴ ]
+├ ᴅᴇᴘʟᴏʏ ᴅɪ ʜᴇʀᴏᴋᴜ
+├ ꜰᴜʟʟ ɢᴀʀᴀɴꜱɪ 1 ʙᴜʟᴀɴ
+└ sɪsᴛᴇᴍ ᴛᴇʀɪᴍᴀ ᴊᴀᴅɪ
+━━━━━━━━━━━━━━━━━━━━━━━━
+Hubungi admin dibawah untuk mengaktifkan userbot🤖</b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="👮‍♂ Admin 1", url=f"https://t.me/amwang"),
-                    InlineKeyboardButton(text="👮‍♂ Admin 2", url=f"https://t.me/Oktaaaaasaa"),
+                    InlineKeyboardButton(text="👮‍♂ Admin 1", url=f"https://t.me/MSDZULQRNN"),
                 ],
 		[
-                    InlineKeyboardButton(text="Support", url=f"https://t.me/amwangsupport"),
+                    InlineKeyboardButton(text="Support", url=f"https://t.me/MSPR0JECT"),
 		],
 		[
                      InlineKeyboardButton(text="Tutup", callback_data="cl_ad"),
