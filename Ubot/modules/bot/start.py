@@ -75,7 +75,7 @@ async def start_(client: Client, message: Message):
     ADMIN2 = ADMIN2_ID[0]
     await message.reply_text(
         f"""<b>👋 Halo {message.from_user.first_name} \n
-💭 Selamat Datang di bot
+🤖 Welcome to 
 ❓ Apa saja sih fiturnya?,kalo mau lihat fitur ubotnya, pm ke admin dibawah ini.
 💡 Jika ingin membuat Userbot premium . Kamu bisa hubungin admin dibawah ini membuat bot.</b>""",
         reply_markup=InlineKeyboardMarkup(
