@@ -104,6 +104,7 @@ async def help_function(answers):
                 Data.text_help_menu.format(len(CMD_HELP))
             ),
             reply_markup=InlineKeyboardMarkup(bttn),
+            disable_web_page_preview=True,
         )
     )
     return answers
