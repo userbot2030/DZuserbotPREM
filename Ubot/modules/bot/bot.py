@@ -21,6 +21,7 @@ async def _callbacks(_, callback_query: CallbackQuery):
             callback_query.inline_message_id,
             Data.text_help_menu,
             reply_markup=InlineKeyboardMarkup(buttons),
+            disable_web_page_preview=True,
         )
     elif query == "close":
         await app.edit_inline_text(callback_query.inline_message_id, "**ᴄʟᴏsᴇ**")
@@ -50,6 +51,7 @@ async def _callbacks(_, callback_query: CallbackQuery):
                 callback_query.inline_message_id,
                 Data.text_help_menu,
                 reply_markup=InlineKeyboardMarkup(bttn),
+                disable_web_page_preview=True,
             )
         except Exception as e:
             e = traceback.format_exc()
