@@ -83,6 +83,7 @@ async def on_plug_in_cb(_, callback_query: CallbackQuery):
         callback_query.inline_message_id,
         reply_pop_up_alert,
         reply_markup=InlineKeyboardMarkup(bttn),
+        disable_web_page_preview=True,
     )
 
 
@@ -94,6 +95,7 @@ async def reopen_in_cb(_, callback_query: CallbackQuery):
         callback_query.inline_message_id,
         Data.text_help_menu,
         reply_markup=InlineKeyboardMarkup(buttons),
+        disable_web_page_preview=True,
     )
 
 
@@ -106,6 +108,7 @@ async def on_plug_prev_in_cb(_, callback_query: CallbackQuery):
         callback_query.inline_message_id,
         Data.text_help_menu,
         reply_markup=InlineKeyboardMarkup(buttons),
+        disable_web_page_preview=True,
     )
 
 
@@ -118,4 +121,5 @@ async def on_plug_next_in_cb(_, callback_query: CallbackQuery):
         callback_query.inline_message_id,
         Data.text_help_menu,
         reply_markup=InlineKeyboardMarkup(buttons),
+        disable_web_page_preview=True,
     )
