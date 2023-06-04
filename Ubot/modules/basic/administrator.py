@@ -156,7 +156,7 @@ async def member_unban(client: Client, message: Message):
         await asyncio.sleep(0.1)
         await zz.delete()
         umention = (await client.get_users(user)).mention
-        await message.edit(f"𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎\n\n<b>Unbanned:</b> {umention}\n<b>Unbanned by:</b> {message.from_user.mention")
+        await message.edit(f"𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎\n\n<b>Unbanned:</b> {umention}\n<b>Unbanned by:</b> {message.from_user.mention}")
     except ChatAdminRequired:
         return await message.edit("**Lu bukan admin di gc ini goblok😭**")
 
