@@ -206,8 +206,8 @@ async def get_list_bots(client: Client, message: Message):
 add_command_help(
     "misc",
     [
-        [f"admins", "Get chats Admins list."],
-        [f"zombies", "To Kick deleted Accounts."],
-        [f"bots","To get Chats Bots list"],
+        [f".admins", "Untuk melihat daftar admin di gc"],
+        [f".zombies", "Untuk kick akun terhapus di gc"],
+        [f".bots", "Untuk melihat daftar bot di gc"],
     ],
 )
