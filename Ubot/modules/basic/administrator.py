@@ -308,7 +308,7 @@ async def promotte(client: Client, message: Message):
         await asyncio.sleep(1)
         await biji.delete()
         umention = (await client.get_users(user_id)).mention
-        await message.edit(f"Promoted! {umention}")
+        await message.edit(f"{DZ}\n\nPromoted! {umention}")
     except ChatAdminRequired:
         return await message.edit(f"**{MMK}**")
 
@@ -349,15 +349,15 @@ async def demote(client: Client, message: Message):
 add_command_help(
     "admin",
     [
-        [f".ban [reply/username/userid]", "Ban pengguna."],
-        [f".unban [reply/username/userid]", "Unban pengguna.",],
-        [f".kick [reply/username/userid]", "kick pengguna dari group."],
-        [f".promote `or` .fullpromote","Promote pengguna.",],
-        [f".demote", "Demote pengguna."],
-        [f".mute [reply/username/userid]","Mute pengguna.",],
-        [f".unmute [reply/username/userid]","Unmute someone.",],
-        [f".pin [reply]","to pin any message.",],
-        [f".unpin [reply]","To unpin any message.",],
-        [f".setgpic [reply ke image]","To set an group profile pic",],
+        [f".ban [reply/username/userid]", "Ban pengguna dari group"],
+        [f".unban [reply/username/userid]", "Unban pengguna dari group",],
+        [f".kick [reply/username/userid]", "kick pengguna dari group"],
+        [f".promote `or` .fullpromote","Jadikan pengguna sebagai admin",],
+        [f".demote", "Turunkan pengguna dari admin ke member"],
+        [f".mute [reply/username/userid]","Mute pengguna dari group",],
+        [f".unmute [reply/username/userid]","Unmute pengguna dari group",],
+        [f".pin [reply]","Pin pesan dalam group",],
+        [f".unpin [reply]","Hapus pin dalam group",],
+        [f".setgpic [reply ke foto]","Pasang foto profil group",],
     ],
 )
