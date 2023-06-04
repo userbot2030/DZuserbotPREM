@@ -2,12 +2,12 @@ from . import pmdb
 
 
 PMPERMIT_MESSAGE = (
-    "**Jangan Spam Atau Anda Akan Diblokir, Jadi Berhati-Hatilah Untuk Mengirim Pesan **"
+    f"𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎\n**Gausah spam atau lu bakal otomatis ke blokir, tunggu gw terima & bales pesan lu **"
 )
 
 BLOCKED = "**Anda Telah Melakukan Spam, BLOCKED!**"
 
-LIMIT = 5
+LIMIT = 10
 
 
 async def set_pm(user_id: int, value: bool):
