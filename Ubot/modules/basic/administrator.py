@@ -98,7 +98,7 @@ async def set_chat_photo(client: Client, message: Message):
             )
             return
     else:
-        await message.edit("Balas ke photo untuk set!")
+        await message.edit("Balas ke photo ya anj🗿")
 
 
 
@@ -109,9 +109,9 @@ async def member_ban(client: Client, message: Message):
     if not user_id:
         return await message.edit("Tidak dapat menemukan pengguna.")
     if user_id == client.me.id:
-        return await message.edit("Tidak bisa banned diri sendiri.")
+        return await message.edit("Ngapain ban diri sendiri goblok🤣")
     if user_id in DEVS:
-        return await message.edit("Tidak bisa banned Devs!")
+        return await message.edit("Ngapain ban Developer tolol😒")
     if user_id in (await list_admins(client, message.chat.id)):
         return await message.edit("Tidak bisa banned admin.")
     try:
@@ -125,14 +125,14 @@ async def member_ban(client: Client, message: Message):
         )
     if message.command[0][0] == "d":
         await message.reply_to_message.delete()
-    msg = f"<b>Banned User:</b> {mention}\n<b>Banned By:</b> {message.from_user.mention}\n"
+    msg = f"𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎\n\n<b>Banned org tolol:</b> {mention}\n<b>Banned By:</b> {message.from_user.mention}\n"
     if reason:
         msg += f"<b>Reason:</b> {reason}"
     try:
         await message.chat.ban_member(user_id)
         await message.edit(msg)
     except ChatAdminRequired:
-        return await message.edit("**Anda bukan admin di group ini !**")
+        return await message.edit("**Lu bukan admin di gc ini goblok😭**")
 
 
 
@@ -156,9 +156,9 @@ async def member_unban(client: Client, message: Message):
         await asyncio.sleep(0.1)
         await zz.delete()
         umention = (await client.get_users(user)).mention
-        await message.edit(f"Unbanned! {umention}")
+        await message.edit(f"𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎\n\n<b>Unbanned:</b> {umention}\n<b>Unbanned by:</b> {message.from_user.mention")
     except ChatAdminRequired:
-        return await message.edit("**Anda bukan admin di group ini !**")
+        return await message.edit("**Lu bukan admin di gc ini goblok😭**")
 
 
 
@@ -171,17 +171,17 @@ async def pin_message(client: Client, message):
     if message.command[0][0] == "u":
         await r.unpin()
         return await message.edit(
-            f"**Unpinned [this]({r.link}) message.**",
+            f"𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎\n\n**Unpinned [klik]({r.link}) message.**\n**Unpin by:** {message.from_user.mention}",
             disable_web_page_preview=True,
         )
     try:
         await r.pin(disable_notification=True)
         await message.edit(
-            f"**Pinned [this]({r.link}) message.**",
+            f"𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎\n\n**Pinned [klik]({r.link}) message.**\n**Pin by:** {message.from_user.mention}",
             disable_web_page_preview=True,
         )
     except ChatAdminRequired:
-        return await message.edit("**Anda bukan admin di group ini !**")
+        return await message.edit("**Lu bukan admin di gc ini goblok😭**")
 
 
 @Client.on_message(filters.command(["mute"], cmds) & filters.me)
@@ -191,15 +191,16 @@ async def mute(client: Client, message: Message):
     if not user_id:
         return await message.edit("Pengguna tidak ditemukan.")
     if user_id == client.me.id:
-        return await message.edit("Tidak bisa mute diri sendiri.")
+        return await message.edit("Ngapain mute diri sendiri goblok🤣")
     if user_id in DEVS:
-        return await message.edit("Tidak bisa mute dev!")
+        return await message.edit("Ngapain mute Developer tolol😒")
     if user_id in (await list_admins(client, message.chat.id)):
         return await message.edit("Tidak bisa mute admin.")
     await nay.delete()
     mention = (await client.get_users(user_id)).mention
     msg = (
-        f"**Muted User:** {mention}\n"
+        f"𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎\n\n"
+        f"**Muted org tolol:** {mention}\n"
         f"**Muted By:** {message.from_user.mention if message.from_user else 'Anon'}\n"
     )
     if reason:
@@ -208,7 +209,7 @@ async def mute(client: Client, message: Message):
         await message.chat.restrict_member(user_id, permissions=ChatPermissions())
         await message.edit(msg)
     except ChatAdminRequired:
-        return await message.edit("**Anda bukan admin di group ini !**")
+        return await message.edit("**Lu bukan admin di gc ini goblok😭**")
 
 
 
@@ -222,9 +223,9 @@ async def unmute(client: Client, message: Message):
         await message.chat.restrict_member(user_id, permissions=unmute_permissions)
         await kl.delete()
         umention = (await client.get_users(user_id)).mention
-        await message.edit(f"Unmuted! {umention}")
+        await message.edit(f"𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎\n\n**Unmuted:** {umention}\n**Unmute by:** {message.from_user.mention}")
     except ChatAdminRequired:
-        return await message.edit("**Anda bukan admin di group ini !**")
+        return await message.edit("**Lu bukan admin di gc ini goblok😭**")
 
 
 @Client.on_message(filters.command(["kick", "dkick"], cmds) & filters.me)
@@ -234,14 +235,16 @@ async def kick_user(client: Client, message: Message):
     if not user_id:
         return await message.edit("Pengguna tidak ditemukan.")
     if user_id == client.me.id:
-        return await message.edit("Tidak bisa kick diri sendiri.")
+        return await message.edit("Ngapain kick diri sendiri goblok🤣")
     if user_id == DEVS:
-        return await message.edit("Tidak bisa kick dev!.")
+        return await message.edit("Ngapain kick Developer tolol😒")
     if user_id in (await list_admins(client, message.chat.id)):
         return await message.edit("Tidak bisa kick admin.")
     await ny.delete()
     mention = (await client.get_users(user_id)).mention
     msg = f"""
+𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎
+
 **Kicked User:** {mention}
 **Kicked By:** {message.from_user.mention if message.from_user else 'Anon'}"""
     if message.command[0][0] == "d":
@@ -254,7 +257,7 @@ async def kick_user(client: Client, message: Message):
         await asyncio.sleep(1)
         await message.chat.unban_member(user_id)
     except ChatAdminRequired:
-        return await message.edit("**Anda bukan admin di group ini !**")
+        return await message.edit("**Lu bukan admin di gc ini goblok😭**")
 
 
 @Client.on_message(
