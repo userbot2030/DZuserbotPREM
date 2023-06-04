@@ -346,15 +346,15 @@ async def demote(client: Client, message: Message):
 add_command_help(
     "admin",
     [
-        [f".ban <reply/username/userid>", "Ban pengguna"],
-        [f".unban <reply/username/userid>", "Unban pengguna",],
-        [f".kick <reply/username/userid>", "kick pengguna dari group"],
+        [f".ban [reply/username/userid]", "Ban pengguna"],
+        [f".unban [reply/username/userid]", "Unban pengguna",],
+        [f".kick [reply/username/userid]", "kick pengguna dari group"],
         [f".promote `atau` .fullpromote","Jadikan pengguna sbg admin group",],
         [f".demote", "Turunkan pengguna dari admin menjadi member"],
-        [f".mute <reply/username/userid>","Bisukan pengguna dari group",],
-        [f".unmute <reply/username/userid>","Bunyikan pengguna dari group",],
-        [f".pin <reply>","Untuk pin pesan di group",],
-        [f".unpin <reply>","Untuk hapus pin dari group",],
-        [f".setgpic <reply foto>","Untuk memasang foto profil group",],
+        [f".mute [reply/username/userid]","Bisukan pengguna dari group",],
+        [f".unmute [reply/username/userid]","Bunyikan pengguna dari group",],
+        [f".pin [reply]","Untuk pin pesan di group",],
+        [f".unpin [reply","Untuk hapus pin dari group",],
+        [f".setgpic [reply foto]","Untuk memasang foto profil group",],
     ],
 )
