@@ -21,7 +21,6 @@ async def _callbacks(_, callback_query: CallbackQuery):
             callback_query.inline_message_id,
             Data.text_help_menu,
             reply_markup=InlineKeyboardMarkup(buttons),
-            disable_web_page_preview=True,
         )
     elif query == "close":
         await app.edit_inline_text(callback_query.inline_message_id, "**ᴄʟᴏsᴇ**")
@@ -51,7 +50,6 @@ async def _callbacks(_, callback_query: CallbackQuery):
                 callback_query.inline_message_id,
                 Data.text_help_menu,
                 reply_markup=InlineKeyboardMarkup(bttn),
-                disable_web_page_preview=True,
             )
         except Exception as e:
             e = traceback.format_exc()
@@ -83,7 +81,6 @@ async def on_plug_in_cb(_, callback_query: CallbackQuery):
         callback_query.inline_message_id,
         reply_pop_up_alert,
         reply_markup=InlineKeyboardMarkup(bttn),
-        disable_web_page_preview=True,
     )
 
 
@@ -95,7 +92,6 @@ async def reopen_in_cb(_, callback_query: CallbackQuery):
         callback_query.inline_message_id,
         Data.text_help_menu,
         reply_markup=InlineKeyboardMarkup(buttons),
-        disable_web_page_preview=True,
     )
 
 
@@ -108,7 +104,6 @@ async def on_plug_prev_in_cb(_, callback_query: CallbackQuery):
         callback_query.inline_message_id,
         Data.text_help_menu,
         reply_markup=InlineKeyboardMarkup(buttons),
-        disable_web_page_preview=True,
     )
 
 
@@ -121,5 +116,4 @@ async def on_plug_next_in_cb(_, callback_query: CallbackQuery):
         callback_query.inline_message_id,
         Data.text_help_menu,
         reply_markup=InlineKeyboardMarkup(buttons),
-        disable_web_page_preview=True,
     )
