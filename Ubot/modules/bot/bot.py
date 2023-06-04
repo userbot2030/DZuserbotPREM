@@ -67,9 +67,9 @@ async def close(_, query: CallbackQuery):
 async def on_plug_in_cb(_, callback_query: CallbackQuery):
     modul_name = callback_query.matches[0].group(1)
     commands: dict = CMD_HELP[modul_name]
-    this_command = f"**Bantuan Untuk {str(modul_name).upper()}**\n\n"
+    this_command = f"𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎\n\n**Bantuan Untuk {str(modul_name).upper()}**\n\n"
     for x in commands:
-        this_command += f"• **Perintah:** `{str(x)}`\n• **Fungsi:** `{str(commands[x])}`\n\n"
+        this_command += f"**ᴄᴍᴅ:\n   ├⋟** `{str(x)}`\n   **└⋟** __{str(commands[x])}__\n\n"
     this_command += "@MSDZULQRNN"
     bttn = [
         [InlineKeyboardButton(text="«ʙᴀᴄᴋ", callback_data="reopen")],
