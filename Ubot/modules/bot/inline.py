@@ -25,7 +25,7 @@ BOT_VER = "5.0.0"
 
 WHITE = [1970636001, 902478883, 2067434944, 1947740506, 1897354060, 1694909518, 5077932806]
 
-BLACK = [1889573907, 1054295664, 1898065191, 918837361, 2073506739]
+BLACK = [1337085565]
 
 
 def support():
@@ -64,11 +64,11 @@ async def get_readable_time(seconds: int) -> str:
 async def alive_function(message, answers):
     status = ""
     if message._client.me.id in BLACK:
-        status = "[owner]"
+        status = "[owner👤]"
     elif message._client.me.id == OWNER_ID:
-        status = "ADMINS"
+        status = "[admin👥]"
     else:
-        status = "[user]"
+        status = "[user🔥]"
     start = datetime.now()
     buttons = support()
     ex = await message._client.get_me()
@@ -78,12 +78,13 @@ async def alive_function(message, answers):
     ping = (datetime.now() - start).microseconds / 1000
     uptime = await get_readable_time((time.time() - StartTime))
     msg = (
-        f"<b>DZuserbot</b>\n"
-        f"<b> status: Premium {status} </b>\n"
-        f"    <b> expired:</b> <code>{remaining_days}</code>\n"
-        f"    <b> ping_ubot:</b> <code>{ping} ms</code>\n"
-        f"    <b> peer_ubot:</b> <code>{user}</code>\n"
-        f"    <b> uptime_ubot:</b> <code>{uptime}</code>\n")
+        f"𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎\n\n"
+        f"<b>status : {status}</b>\n"
+        f"<b>type : Premium💎</b>\n"
+        f"<b>expired:</b> <code>{remaining_days}</code>\n"
+        f"<b>ping_ubot:</b> <code>{ping} ms</code>\n"
+        f"<b>peer_ubot:</b> <code>{user}</code>\n"
+        f"<b>uptime_ubot:</b> <code>{uptime}</code>\n")
     answers.append(
         InlineQueryResultArticle(
             title="alive",
@@ -104,7 +105,6 @@ async def help_function(answers):
                 Data.text_help_menu.format(len(CMD_HELP))
             ),
             reply_markup=InlineKeyboardMarkup(bttn),
-            disable_web_page_preview=True,
         )
     )
     return answers
