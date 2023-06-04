@@ -287,7 +287,7 @@ async def promotte(client: Client, message: Message):
             await asyncio.sleep(1)
             await biji.delete()
             umention = (await client.get_users(user_id)).mention
-            return await message.edit(f"Fully Promoted! {umention}")
+            return await message.edit(f"𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎\n\n**Fully Promote:** {umention}\n**Full Promote by:** {message.from_user.mention}")
 
         await message.chat.promote_member(
             user_id,
@@ -305,9 +305,9 @@ async def promotte(client: Client, message: Message):
         await asyncio.sleep(1)
         await biji.delete()
         umention = (await client.get_users(user_id)).mention
-        await message.edit(f"Promoted! {umention}")
+        await message.edit(f"𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎\n\n**Promoted:** {umention}\n**Promote by:** {message.from_user.mention}")
     except ChatAdminRequired:
-        return await message.edit("**Anda bukan admin di group ini !**")
+        return await message.edit("**Lu bukan admin di gc ini goblok😭**")
 
 
 @Client.on_message(
@@ -323,7 +323,7 @@ async def demote(client: Client, message: Message):
     if not user_id:
         return await message.edit("Pengguna tidak ditemukan")
     if user_id == client.me.id:
-        return await message.edit("Tidak bisa demote diri sendiri.")
+        return await message.edit("Ngapain demote diri sendiri goblok🤣")
     await message.chat.promote_member(
         user_id,
         privileges=ChatPrivileges(
@@ -340,21 +340,21 @@ async def demote(client: Client, message: Message):
     await asyncio.sleep(1)
     await sempak.delete()
     umention = (await client.get_users(user_id)).mention
-    await message.edit(f"Demoted! {umention}")
+    await message.edit(f"𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎\n\n**Demoted:** {umention}\n**Demote by:** {message.from_user.mention}")
 
 
 add_command_help(
     "admin",
     [
-        [f"ban [reply/username/userid]", "Ban pengguna."],
-        [f"unban [reply/username/userid]", "Unban pengguna.",],
-        [f"kick [reply/username/userid]", "kick pengguna dari group."],
-        [f"promote `or` .fullpromote","Promote pengguna.",],
-        [f"demote", "Demote pengguna."],
-        [f"mute [reply/username/userid]","Mute pengguna.",],
-        [f"unmute [reply/username/userid]","Unmute someone.",],
-        [f"pin [reply]","to pin any message.",],
-        [f"unpin [reply]","To unpin any message.",],
-        [f"setgpic [reply ke image]","To set an group profile pic",],
+        [f".ban <reply/username/userid>", "Ban pengguna"],
+        [f".unban <reply/username/userid>", "Unban pengguna",],
+        [f".kick <reply/username/userid>", "kick pengguna dari group"],
+        [f".promote `atau` .fullpromote","Jadikan pengguna sbg admin group",],
+        [f".demote", "Turunkan pengguna dari admin menjadi member"],
+        [f".mute <reply/username/userid>","Bisukan pengguna dari group",],
+        [f".unmute <reply/username/userid>","Bunyikan pengguna dari group",],
+        [f".pin <reply>","Untuk pin pesan di group",],
+        [f".unpin <reply>","Untuk hapus pin dari group",],
+        [f".setgpic <reply foto>","Untuk memasang foto profil group",],
     ],
 )
