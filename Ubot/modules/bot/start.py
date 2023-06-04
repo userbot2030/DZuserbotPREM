@@ -68,36 +68,6 @@ XCB = [
     "main",
 ]
 
-
-@app.on_message(filters.command(["start"]))
-async def start_(client: Client, message: Message):
-    ADMIN1 = ADMIN1_ID[0]
-    await message.reply_text(
-        f"""<b>👋 Halo {message.from_user.first_name} \n
-━━━━━━━━━━━━━━━━━━━━━━━━
-𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 ᴘʀᴇᴍɪᴜᴍ💎
-├ ʀᴘ. 30.000  [ ᴘᴇʀʙᴜʟᴀɴ ]
-├ ᴅᴇᴘʟᴏʏ ᴅɪ ʜᴇʀᴏᴋᴜ
-├ ꜰᴜʟʟ ɢᴀʀᴀɴꜱɪ 1 ʙᴜʟᴀɴ
-└ sɪsᴛᴇᴍ ᴛᴇʀɪᴍᴀ ᴊᴀᴅɪ
-━━━━━━━━━━━━━━━━━━━━━━━━
-Hubungi admin dibawah untuk mengaktifkan userbot🤖</b>""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(text="👮‍♂ Admin 1", url=f"https://t.me/MSDZULQRNN"),
-                ],
-		[
-                    InlineKeyboardButton(text="Support", url=f"https://t.me/MSPR0JECT"),
-		],
-		[
-                     InlineKeyboardButton(text="Tutup", callback_data="cl_ad"),
-                  ],
-             ]
-        ),
-     disable_web_page_preview=True
-    )
-    
         
 @app.on_message(filters.command("control") & ~filters.via_bot)
 @app.on_message(filters.private & filters.command("control") & ~filters.via_bot
