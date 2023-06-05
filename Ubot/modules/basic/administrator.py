@@ -19,8 +19,8 @@ from . import *
 from ubotlibs.ubot.helper.basic import eor
 from .profile import extract_user, extract_userid
 
-MMK = Lu bukan admin di gc ini goblok😭
-DZ = 𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎
+MMK = "Lu bukan admin di gc ini goblok😭"
+DZ = "𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎"
 
 admins_in_chat = {}
 
