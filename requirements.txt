@@ -9,11 +9,11 @@ ffmpeg-python
 git+https://github.com/yt-dlp/yt-dlp.git
 youtube-search
 youtube-search-python
-APScheduler==3.6.3
+APScheduler
 aiohttp
-aiofiles==22.1.0
+aiofiles
 bs4
-emoji==1.6.0
+emoji
 gitpython
 httpx[http2]
 humanize
@@ -24,7 +24,7 @@ lottie
 numpy
 httpx
 heroku3
-requests==2.28.2
+requests
 motor
 opencv-python-headless
 psutil
@@ -50,8 +50,8 @@ uvloop
 telegraph
 uwuify
 wget
-pyaes==1.6.1
-pysocks==1.7.1
+pyaes
+pysocks
 aiosqlite>=0.16.0,<0.18.0
 Pillow
 git+https://github.com/Itz-fork/py-extract.git
