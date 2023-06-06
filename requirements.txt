@@ -9,6 +9,7 @@ gpytranslate
 gtts
 heroku3
 lottie
+motor
 prettytable
 psycopg2-binary
 pymediainfo
