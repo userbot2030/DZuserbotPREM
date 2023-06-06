@@ -2,7 +2,6 @@ from pyrogram import Client, filters
 from Ubot import cmds, app, BOTLOG_CHATID
 from Ubot.core import *
 from Ubot.logging import LOGGER
-from ubotlibs.ubot import Ubot
 import os
 import sys
 from os import environ, execle, path, remove
