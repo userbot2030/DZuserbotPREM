@@ -5,7 +5,6 @@ import asyncio
 from pyrogram import idle
 
 from uvloop import install
-from ubotlibs import *
 from Ubot import aiosession, bots, app, ids, event_loop
 from platform import python_version as py
 from .logging import LOGGER
