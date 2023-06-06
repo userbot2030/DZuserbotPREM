@@ -28,6 +28,7 @@ from platform import python_version as py
 from pyrogram import __version__ as pyro
 from pyrogram.types import * 
 from io import BytesIO
+from ubotlibs import *
 from ubotlibs.ubot.utils.misc import *
 from Ubot.logging import LOGGER
 from config import *
