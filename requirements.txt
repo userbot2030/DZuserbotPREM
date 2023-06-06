@@ -10,6 +10,7 @@ gtts
 heroku3
 lottie
 motor
+openai
 prettytable
 psycopg2-binary
 pymediainfo
