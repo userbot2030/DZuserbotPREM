@@ -12,6 +12,7 @@ from pyrogram import __version__ as pyro
 from Ubot.modules import ALL_MODULES
 from Ubot.core.db import *
 from Ubot.core import *
+from ubotlibs import *
 from config import SUPPORT, CHANNEL
 import os
 from dotenv import load_dotenv
