@@ -36,11 +36,13 @@ pytgcalls==3.0.0.dev22
 python-dotenv
 pytube
 psutil
+reportlab
 requests
 schedule
 SpeechRecognition
 speedtest-cli==2.1.3
 sqlalchemy==1.3.23
+svglib
 telegraph
 tgcrypto
 tracemoepy
