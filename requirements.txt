@@ -3,6 +3,7 @@ aiofiles
 aiohttp
 asyncio
 bs4
+dnspython
 emoji==1.6.0
 ffmpeg-python
 flask
@@ -31,6 +32,7 @@ pymediainfo
 pyrogram
 pytgcalls==3.0.0.dev22
 python-dotenv
+psutil
 requests
 schedule
 SpeechRecognition
