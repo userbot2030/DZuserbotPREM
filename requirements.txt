@@ -16,7 +16,8 @@ gpytranslate
 gtts
 gunicorn
 heroku3
-kynaylibs==7.0.3
+httpx[https2]
+humanize
 lottie
 motor
 openai
