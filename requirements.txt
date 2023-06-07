@@ -44,6 +44,7 @@ speedtest-cli==2.1.3
 sqlalchemy==1.3.23
 svglib
 telegraph
+textblob
 tgcrypto
 tracemoepy
 opencv-python-headless
