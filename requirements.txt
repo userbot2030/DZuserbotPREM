@@ -9,6 +9,7 @@ git+https://github.com/Itz-fork/py-extract.git
 git+https://github.com/Itz-fork/py-trans.git
 git+https://github.com/yt-dlp/yt-dlp.git
 googlesearch-python== 1.0.1
+googletrans
 gpytranslate
 gtts
 gunicorn
