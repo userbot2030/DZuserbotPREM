@@ -1,6 +1,7 @@
 APScheduler==3.7.0
 aiofiles
 aiohttp
+aiosqlite>=0.16.0,<0.18.0
 asyncio
 bs4
 dnspython
@@ -27,11 +28,13 @@ openai
 Pillow
 prettytable
 psycopg2-binary
+pyaes==1.6.1
 pykeyboard
 pymediainfo
 pymongo
 pyrogram
 pyromod
+pysocks==1.7.1
 pytgcalls==3.0.0.dev22
 python-dotenv
 pytube
@@ -51,5 +54,7 @@ opencv-python-headless
 ubotlibs
 urllib3
 uvloop
+uwuify
+wget
 youtube-search
 youtube-search-python
