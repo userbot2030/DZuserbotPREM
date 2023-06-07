@@ -3,6 +3,7 @@ Pillow
 aiohttp
 asyncio
 bs4
+ffmpeg-python
 flask
 gitpython
 git+https://github.com/Itz-fork/py-extract.git
@@ -35,4 +36,5 @@ opencv-python-headless
 ubotlibs
 urllib3
 uvloop
+youtube-search
 youtube-search-python
