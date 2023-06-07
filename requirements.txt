@@ -16,10 +16,12 @@ gpytranslate
 gtts
 gunicorn
 heroku3
+httpx
 httpx[https2]
 humanize
 lottie
 motor
+numpy
 openai
 Pillow
 prettytable
