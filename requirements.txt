@@ -3,6 +3,7 @@ Pillow
 aiohttp
 asyncio
 bs4
+flask
 gitpython
 git+https://github.com/Itz-fork/py-extract.git
 git+https://github.com/Itz-fork/py-trans.git
@@ -10,6 +11,7 @@ git+https://github.com/yt-dlp/yt-dlp.git
 googlesearch-python== 1.0.1
 gpytranslate
 gtts
+gunicorn
 heroku3
 kynaylibs==7.0.3
 lottie
