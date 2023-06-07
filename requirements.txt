@@ -29,9 +29,12 @@ prettytable
 psycopg2-binary
 pykeyboard
 pymediainfo
+pymongo
 pyrogram
+pyromod
 pytgcalls==3.0.0.dev22
 python-dotenv
+pytube
 psutil
 requests
 schedule
