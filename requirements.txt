@@ -1,5 +1,5 @@
 APScheduler==3.7.0
-Pillow
+aiofiles
 aiohttp
 asyncio
 bs4
@@ -19,6 +19,7 @@ kynaylibs==7.0.3
 lottie
 motor
 openai
+Pillow
 prettytable
 psycopg2-binary
 pymediainfo
