@@ -3,6 +3,7 @@ aiofiles
 aiohttp
 asyncio
 bs4
+emoji==1.6.0
 ffmpeg-python
 flask
 gitpython
