@@ -38,7 +38,7 @@ def restart():
 
 HAPP = None
 
-GUA = [1337085565]
+GUA = [5779185981]
 
 load_dotenv()
 
@@ -222,7 +222,7 @@ async def usage_dynos(client, message):
     AppMinutes = math.floor(AppQuotaUsed % 60)
     await asyncio.sleep(1.5)
     text = f"""
-**Penggunaan Dyno AmangUbot**
+**Penggunaan Dyno DanUbot**
 
  ❏ Dyno terpakai:
  ├ Terpakai: `{AppHours}`**h**  `{AppMinutes}`**m**  [`{AppPercentage}`**%**]
