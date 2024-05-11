@@ -53,7 +53,7 @@ def cb_wrapper(func):
         users = list_users
         if cb.from_user.id not in users:
             await cb.answer(
-                "Bikin ubot sendiri pc admin @MSDZULQRNN",
+                "Bikin ubot sendiri pc admin @mhmdwldnnnn",
                 cache_time=0,
                 show_alert=True,
             )
@@ -83,7 +83,7 @@ def inline_wrapper(func):
                 results=[
                     (
                         InlineQueryResultArticle(
-                            title="Bikin ubot sendiri pc admin @MSDZULQRNN",
+                            title="Bikin ubot sendiri pc admin @mhmdwldnnnn",
                             input_message_content=InputTextMessageContent(
                                 "You cannot access this Bot"
                             ),
