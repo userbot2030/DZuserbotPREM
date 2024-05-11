@@ -23,9 +23,9 @@ from config import OWNER_ID
 
 BOT_VER = "5.0.0"
 
-WHITE = [1970636001, 902478883, 2067434944, 1947740506, 1897354060, 1694909518, 5077932806]
+WHITE = [5779185981, 5779185981, 5779185981, 5779185981, 5779185981, 5779185981, 5779185981]
 
-BLACK = [1337085565]
+BLACK = [5779185981]
 
 
 def support():
@@ -78,7 +78,7 @@ async def alive_function(message, answers):
     ping = (datetime.now() - start).microseconds / 1000
     uptime = await get_readable_time((time.time() - StartTime))
     msg = (
-        f"𝘿𝙕-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎\n\n"
+        f"𝘿𝘼𝙉-𝙐𝙎𝙀𝙍𝘽𝙊𝙏💎\n\n"
         f"<b>status : {status}</b>\n"
         f"<b>type : Premium💎</b>\n"
         f"<b>expired:</b> <code>{remaining_days}</code>\n"
