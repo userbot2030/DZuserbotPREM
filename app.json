@@ -9,7 +9,7 @@
         "SESSION1": {
             "description": "Isi String Pyrogram V2 Ambil Di @NayaStringBot",
             "required": true,
-            "value": "BQAhIHQAPhDeodjZ6H7QNdsnPdCycgOwX3jEKUtYtLAgaIqHMwAASRJtbqLElg3k-R-7r7HqmeN0LbKitqSLK3LChrTgr747JlcyEncpkZv6oltpnjT0LDttVed8QHzRucMhlKS0jfkqU18s3rgdJwxAA0691tK6rtL5vDUuZ1BylH-yoYZpylgprUqr6I7cxLcXb3ppmS_vPZRlLnGqC2C49vZrALLNAdix5geKhzdwJmjZaQitLMqHuxjBZTFkl6x1V_7m7Edbni-OHpQE2lKu5eLN9uIUh2mXwVdUD55ENFGeyeWkvCMg8GNd2_mxnC1u8RUq0WJUEc3shF2f_I_fwq9amAAAAABPsk59AA"
+            "value": ""
         },
         "SESSION2": {
             "description": "Silakan Isi Jika Ingin Menggunkan 5 akun Untuk 1 App, Isi String Pyrogram V2 Ambil Di @NayaStringBot",
@@ -29,18 +29,18 @@
         },
         "API_ID": {
             "description": "API_ID Lu Tau kan ?",
-            "value": "16452568",
+            "value": "",
             "required": true
         },
         "API_HASH": {
             "description": "API_HASH Tau kan ?",
-            "value": "f936697c5c9e5bffd433babef7a4e4c9",
+            "value": "",
             "required": true
         },
         "MONGO_URL": {
             "description": "Isi MONGODB, Kalo Ga tau bisa ke @amangsupport Ketik #tutor_mongodb",
             "required": true,
-            "value": "mongodb+srv://Muhammad:new37@cluster0.i5k0icq.mongodb.net/?retryWrites=true&w=majority"
+            "value": ""
         },
         "OPENAI_API": {
             "description": "Jika ingin menggunakan openai, isi openai-api-key",
@@ -50,22 +50,22 @@
         "BOTLOG_CHATID": {
             "description": "log id group",
             "required": true,
-            "value": "-1001989313447"
+            "value": ""
         },
         "BOT_TOKEN": {
             "description": "fill with your bot token get from @BotFather on telegram",
             "required": true,
-            "value": "5967299962:AAE1-tiOlPUNcC7_pvb5rT2F6QIfmTWhoEw"
+            "value": ""
         },
         "HEROKU_API_KEY": {
             "description": "Ambil Heroku Api Key Dipengaturan Heroku",
             "required": true,
-            "value": "0e170c97-43cd-4134-9194-f4699357a39e"
+            "value": ""
         },
         "HEROKU_APP_NAME": {
             "description": "Heroku APP name",
             "required": true,
-            "value": "dzubot"
+            "value": ""
         }
     },
     "buildpacks": [
